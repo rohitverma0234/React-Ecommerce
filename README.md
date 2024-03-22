@@ -1,12 +1,9 @@
-# React-Router-dom
+# Styled Components
 ## 1. Installation
-npm install react-router-dom
+npm install styled-components
 
-## 2. Router Component:
-react-router-dom provides several components, but the most important one is <BrowserRouter>, which you'll wrap around your application. This component uses HTML5 history API to keep your UI in sync with the URL.
+## 2. GlobalStyle:
+GlobalStyle is a styled component that contains CSS rules you want to apply globally. When you include <GlobalStyle /> within your React application, it injects these styles into the <head> of your HTML document, ensuring they apply to all elements in your app.
 
-## 3. Route Component:
-You define routes using the <Route> component. Each <Route> component checks the current location’s pathname and renders the corresponding component if the path matches. You can specify paths using path prop and the component to render using component prop.
-
-## 4. Link Component:
-Instead of traditional anchor tags (<a>), you'll use <Link> component from react-router-dom to navigate between different routes in your application. It prevents full page reloads and provides a smoother user experience.
+## 3. ThemeProvider:
+ ThemeProvider component allows you to define a theme and make it available to all styled components within your application. This is particularly useful for maintaining consistent styles and theming across your components.
