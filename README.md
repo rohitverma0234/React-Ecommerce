@@ -13,4 +13,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/main">Main Starter Files of React Ecom Source Code</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/React-Router-dom">Updated React Router Dom</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/02_Styled-Components">Styled-Components</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/03_Header-Section">Header-Section</a></li>
 </ul>
