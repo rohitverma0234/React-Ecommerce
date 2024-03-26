@@ -10,6 +10,7 @@ import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import Products from './Products';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </ThemeProvider>
   );
