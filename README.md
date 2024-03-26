@@ -18,4 +18,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/Home-%26-About-Page-with-Hero-Section">HeroSection, Home Page & About Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/06_Services-%26-Trusted-Section">Services & Trusted Sections</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/07_Contact-Page">Contact Page</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/08_Footer-Section">Footer-Section</a></li>
 </ul>
