@@ -13,11 +13,11 @@ html {
   font-size: 62.5%;
   /* scroll-behavior: smooth; */
   /* 1rem = 10px */
-  overflow-x: hidden;
+  ${'' /* overflow-x: hidden; */}
 }
 
 body {
-  overflow-x: hidden;
+  ${'' /* overflow-x: hidden; */}
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
 }
@@ -78,4 +78,26 @@ a {
 
 li {
   list-style: none;
-}`
+}
+
+@media (max-width: ${({ theme }) => theme.media.tab}) {
+    .container {
+    max-width: 130rem;
+    padding: 0 3.2rem;
+  }
+  }
+
+   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+       html {
+      font-size: 50%;
+    }
+
+.grid{
+  gap: 3.2rem;
+}
+      .grid-two-column , .grid-three-column, .grid-four-column{
+          grid-template-columns: 1fr;
+        }
+    }
+
+`;
