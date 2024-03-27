@@ -1,3 +1,13 @@
+# React Icons
+## 1. Installation
+npm install react-icons
+
+## 2. Created Components:
+<ul>
+  <li>Header.js</li>
+  <li>Nav.js</li>
+</ul>
+
 # Welcome to Rohit React Ecommerce Website
 
 ## Follow the 3 Steps and you are good to go.
