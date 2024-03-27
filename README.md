@@ -1,28 +1,15 @@
-# Responsive-Header-Section
-## UseState Hook
-The useState hook is a built-in hook that allows functional components to manage state. It's commonly used when you need to add state to a component without converting it into a class.
+# Props
+## 1. Definition
+Props stands for properties and refers to the mechanism for passing data from one component to another within an application.
 
-Here's a basic overview of how to use useState:
+## 2. Here's how it works:
+1. <b>Parent Component Passing Data:</b> A parent component can pass data to a child component by using attributes similar to HTML attributes.
 
-import React, { useState } from 'react';
+2. <b>Receiving Props</b>: The child component receives the data passed by the parent as props. Props are received as an object within the child component.
 
-function ExampleComponent() {<br>
-  // Here, we declare a state variable called "count" and a function to update it, "setCount".<br>
-  // We initialize the state with a value of 0.<br>
-  const [count, setCount] = useState(0);
+3. <b>Immutable Data</b>: Props are immutable, meaning that a child component cannot directly modify the props it receives from its parent. They are read-only.
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      {/* When the button is clicked, we call setCount to update the state */}<br>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
-
-export default ExampleComponent;
+4. <b>Functional and Class Components</b>: Props can be used with both functional and class components in React.
 
 # Welcome to Rohit React Ecommerce Website
 
