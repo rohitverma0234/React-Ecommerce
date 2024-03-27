@@ -1,6 +1,3 @@
-# Contact Page Form using Formspree:
-Formspree is a service that allows you to create forms for your website with ease. It provides a simple way to collect form submissions without the need for backend code or server setup. With Formspree, you can quickly generate HTML forms, customize them to suit your needs, and receive form submissions via email or integrate them with other services like Slack or Zapier for further automation.
-
 # Welcome to Rohit React Ecommerce Website
 
 ## Follow the 3 Steps and you are good to go.
