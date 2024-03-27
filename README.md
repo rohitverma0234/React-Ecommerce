@@ -1,15 +1,11 @@
-# React-Router-dom
-## 1. Installation
-npm install react-router-dom
+# ContextAPI:
+The Context API is a feature that allows you to share data across the component tree without having to pass props down manually at every level.
 
-## 2. Router Component:
-react-router-dom provides several components, but the most important one is <BrowserRouter>, which you'll wrap around your application. This component uses HTML5 history API to keep your UI in sync with the URL.
+1. <b>Create a Context</b>: You start by creating a context using the createContext() function provided by React. This function returns a Provider and a Consumer.
 
-## 3. Route Component:
-You define routes using the <Route> component. Each <Route> component checks the current location’s pathname and renders the corresponding component if the path matches. You can specify paths using path prop and the component to render using component prop.
+2. <b>Provide the Context</b>: You wrap the parent component or a higher-level component that holds the data you want to share with the Provider component. The Provider component accepts a value prop which contains the data you want to share.
 
-## 4. Link Component:
-Instead of traditional anchor tags (<a>), you'll use <Link> component from react-router-dom to navigate between different routes in your application. It prevents full page reloads and provides a smoother user experience.
+3. <b>Consume the Context</b>: Any child component that needs access to the shared data can use the Consumer component or the useContext() hook to access the data provided by the context.
 
 # Welcome to Rohit React Ecommerce Website
 
