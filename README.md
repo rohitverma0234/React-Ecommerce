@@ -1,9 +1,22 @@
-# Styled Components
-## 1. Installation
-npm install styled-components
+# Welcome to Rohit React Ecommerce Website
 
-## 2. GlobalStyle:
-GlobalStyle is a styled component that contains CSS rules you want to apply globally. When you include <GlobalStyle /> within your React application, it injects these styles into the <head> of your HTML document, ensuring they apply to all elements in your app.
+## Follow the 3 Steps and you are good to go.
 
-## 3. ThemeProvider:
- ThemeProvider component allows you to define a theme and make it available to all styled components within your application. This is particularly useful for maintaining consistent styles and theming across your components.
+1: Clone the Project
+
+2: Simply run the command npm install - First to install all the packages
+
+3: Run the project using npm start
+
+## Also I am creating a List of the respective code, you can checkout below 👇
+<ul>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/main">Main Starter Files of React Ecom Source Code</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/React-Router-dom">Updated React Router Dom</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/02_Styled-Components">Styled-Components</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/03_Header-Section">Header-Section</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/04_Header-Responsiveness">Responsive-Header-Section</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/Home-%26-About-Page-with-Hero-Section">HeroSection, Home Page & About Page</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/06_Services-%26-Trusted-Section">Services & Trusted Sections</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/07_Contact-Page">Contact Page</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/08_Footer-Section">Footer-Section</a></li>
+</ul>
