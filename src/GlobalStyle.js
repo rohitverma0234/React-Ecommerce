@@ -108,6 +108,52 @@ ${"" /* resuable code section  */}
   grid-template-columns: repeat(5, 1fr);
 }
 
+.common-heading {
+      font-size: 3.8rem;
+      font-weight: 600;
+      margin-bottom: 6rem;
+      text-transform: capitalize;
+    }
+
+     .intro-data {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: #5138ee;
+    }
+
+   .caption {
+      position: absolute;
+      top: 15%;
+      right: 10%;
+      text-transform: uppercase;
+      background-color: ${({ theme }) => theme.colors.bg};
+      color: ${({ theme }) => theme.colors.helper};
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 2rem;
+    }
+
+input, textarea{
+    max-width: 50rem;
+    color: ${({ theme }) => theme.colors.black};
+    padding: 1.6rem 2.4rem;
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    text-transform: uppercase;
+   box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+}
+    input[type="submit"]{
+    max-width: 16rem;
+    margin-top: 2rem;
+    background-color: ${({ theme }) => theme.colors.btn};
+    color: ${({ theme }) => theme.colors.white};
+    padding: 1.4rem 2.2rem;
+    border-style: solid;
+    border-width: .1rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    cursor: pointer;
+    }
+
 @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;

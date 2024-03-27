@@ -1,6 +1,5 @@
-# Services & Trusted Sections
-## Used Styled-Components with CSS Grid:
-Styled-components is a library for styling React components using tagged template literals. It allows developers to write CSS in JavaScript by defining styles within the components themselves. 
+# Contact Page Form using Formspree:
+Formspree is a service that allows you to create forms for your website with ease. It provides a simple way to collect form submissions without the need for backend code or server setup. With Formspree, you can quickly generate HTML forms, customize them to suit your needs, and receive form submissions via email or integrate them with other services like Slack or Zapier for further automation.
 
 # Welcome to Rohit React Ecommerce Website
 
