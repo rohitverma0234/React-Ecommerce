@@ -10,6 +10,7 @@ You define routes using the <Route> component. Each <Route> component checks the
 
 ## 4. Link Component:
 Instead of traditional anchor tags (<a>), you'll use <Link> component from react-router-dom to navigate between different routes in your application. It prevents full page reloads and provides a smoother user experience.
+
 # Welcome to Rohit React Ecommerce Website
 
 ## Follow the 3 Steps and you are good to go.
@@ -31,4 +32,4 @@ Instead of traditional anchor tags (<a>), you'll use <Link> component from react
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/06_Services-%26-Trusted-Section">Services & Trusted Sections</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/07_Contact-Page">Contact Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/08_Footer-Section">Footer-Section</a></li>
-</ul>
+  </ul>
