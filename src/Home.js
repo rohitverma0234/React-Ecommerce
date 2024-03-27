@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import HeroSection from './components/HeroSection'
+import Services from './components/Services'
+import Trusted from './components/Trusted'
 
 const Home = () => {
   const data = {
@@ -8,14 +9,12 @@ const Home = () => {
   }
 
   return (
-    <Wrapper className='test'>
+    <>
     <HeroSection myData={data}/>
-    </Wrapper>
+    <Services/>
+    <Trusted/>
+    </>
   )
 }
-
-const Wrapper = styled.section`
-  
-`
 
 export default Home
