@@ -21,4 +21,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/08_Footer-Section">Footer-Section</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/09_Error-Page">Error-Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/10_Context-API-with-Provider-%26-useContext-Hooks">ContextAPI</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/11_Fetch-API-Data-using-Axios">Fetch API using Axios</a></li>
   </ul>
