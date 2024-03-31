@@ -1,3 +1,10 @@
+# useReducer Hook:
+State management using useReducer Hook:-<br/>
+InitialState = isLoading, isError, Products, featureProducts<br/>
+const [state, dispatch] = useReducer(reducer, initialState)<br/>
+
+state is the initialState and dispatch function calls the reducer function which will calls the action method in reducer function.
+
 # Welcome to Rohit React Ecommerce Website
 
 ## Follow the 3 Steps and you are good to go.
