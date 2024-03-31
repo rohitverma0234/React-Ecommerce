@@ -1,10 +1,3 @@
-# useReducer Hook:
-State management using useReducer Hook:-<br/>
-InitialState = isLoading, isError, Products, featureProducts<br/>
-const [state, dispatch] = useReducer(reducer, initialState)<br/>
-
-state is the initialState and dispatch function calls the reducer function which will calls the action method in reducer function.
-
 # Welcome to Rohit React Ecommerce Website
 
 ## Follow the 3 Steps and you are good to go.
@@ -26,4 +19,8 @@ state is the initialState and dispatch function calls the reducer function which
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/06_Services-%26-Trusted-Section">Services & Trusted Sections</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/07_Contact-Page">Contact Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/08_Footer-Section">Footer-Section</a></li>
-  </ul>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/09_Error-Page">Error-Page</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/10_Context-API-with-Provider-%26-useContext-Hooks">ContextAPI</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/11_Fetch-API-Data-using-Axios">Fetch API using Axios</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/12_State-Management-using-useReducer-Hook">State Management using useReducer Hook</a></li> 
+</ul>
