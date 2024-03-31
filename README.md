@@ -23,4 +23,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/10_Context-API-with-Provider-%26-useContext-Hooks">ContextAPI</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/11_Fetch-API-Data-using-Axios">Fetch API using Axios</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/12_State-Management-using-useReducer-Hook">State Management using useReducer Hook</a></li> 
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/13_Feature-Section-of-Home-Page">Feature Section of Home Page</a></li> 
 </ul>
