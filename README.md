@@ -1,9 +1,5 @@
-# useReducer Hook:
-State management using useReducer Hook:-<br/>
-InitialState = isLoading, isError, Products, featureProducts<br/>
-const [state, dispatch] = useReducer(reducer, initialState)<br/>
-
-state is the initialState and dispatch function calls the reducer function which will calls the action method in reducer function.
+# Intl.NumberFormat() constructor
+The Intl.NumberFormat() constructor is used for formatting numbers according to the locale and formatting options provided. It is part of the Internationalization API, which allows for formatting of dates, times, numbers, and currencies in a locale-sensitive manner.
 
 # Welcome to Rohit React Ecommerce Website
 
