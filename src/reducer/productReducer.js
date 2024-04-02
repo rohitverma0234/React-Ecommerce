@@ -17,7 +17,7 @@ const productReducer = (state, action) => {
     //             featureProducts:featureData
     //         }
     //     }
-    
+
 
     // if(action.type==="API_ERROR"){
     //     return{
@@ -50,6 +50,27 @@ const productReducer = (state, action) => {
             return {
                 ...state,
                 isLoading: false,
+                isError: true
+            }
+
+        //  2nd api actions:-
+        case "SET_SINGLE_LOADING":
+            return {
+                ...state,
+                isSingleLoading: true
+            }
+
+        case "MY_SINGLE_PRODUCT":
+            return {
+                ...state,
+                isSingleLoading: false,
+                singleProduct: action.payload
+            }
+
+        case "SINGLE_ERROR":
+            return {
+                ...state,
+                isSingleLoading: false,
                 isError: true
             }
 
