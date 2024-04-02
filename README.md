@@ -1,9 +1,10 @@
-# useReducer Hook:
-State management using useReducer Hook:-<br/>
-InitialState = isLoading, isError, Products, featureProducts<br/>
-const [state, dispatch] = useReducer(reducer, initialState)<br/>
-
-state is the initialState and dispatch function calls the reducer function which will calls the action method in reducer function.
+# Complete Context API, Axios & useReducer State for Single Product
+Used 3 Cases:-<br/>
+<ul>
+  <li>SET_SINGLE_LOADING</li>
+  <li>MY_SINGLE_PRODUCT</li>
+  <li>SINGLE_ERROR</li>
+</ul>
 
 # Welcome to Rohit React Ecommerce Website
 
