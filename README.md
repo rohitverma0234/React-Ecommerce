@@ -25,4 +25,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/12_State-Management-using-useReducer-Hook">State Management using useReducer Hook</a></li> 
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/13_Feature-Section-of-Home-Page">Feature Section of Home Page</a></li> 
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/14_Format-Price-Dollar-Currency">Format Pricing</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/15_SingleProduct-Page-(1)">Complete Context API, Axios & useReducer State for Single Product</a></li>
 </ul>
