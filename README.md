@@ -29,4 +29,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/16_SingleProduct-Page-(2)">Get API Data with ID and Destructure in Single Product Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/17_Page-Navigation-%26-Product-Details-UI">Page Navigation & Product Details UI</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/18_Dynamic-Images-Functionality">Dynamic Images Functionality in One Click using useState Hook</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/19_Star-Ratings-Component-%26-Reviews">Star Ratings & Reviews in Star Component</a></li>
 </ul>
