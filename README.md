@@ -1,9 +1,10 @@
-# useReducer Hook:
-State management using useReducer Hook:-<br/>
-InitialState = isLoading, isError, Products, featureProducts<br/>
-const [state, dispatch] = useReducer(reducer, initialState)<br/>
-
-state is the initialState and dispatch function calls the reducer function which will calls the action method in reducer function.
+# Used - Array.from() method to generate the sequence of numbers.
+Compare 3 different star patterns:-
+<ul>
+  <li>Full star icon:- FaStar</li>
+  <li>Half star icon: FaStarHalfAlt</li>
+  <li>Blank star icon:- AiOutlineStar</li>
+</ul>
 
 # Welcome to Rohit React Ecommerce Website
 
