@@ -32,4 +32,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/19_Star-Ratings-Component-%26-Reviews">Star Ratings & Reviews in Star Component</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/20_Colors-Picker-Selection-functionality">Dynamic Color Section</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/21_Product-Quantity-Increment-%26-Decrement-Button">Product Quantity Increment & Decrement Button</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/22_Product-Page-with-all-Filters-%26-Sorting">Products Page</a></li>
 </ul>
