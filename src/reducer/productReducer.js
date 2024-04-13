@@ -75,7 +75,6 @@ const productReducer = (state, action) => {
             }
 
 
-
         default:
             return state
     }
