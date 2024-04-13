@@ -33,4 +33,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/20_Colors-Picker-Selection-functionality">Dynamic Color Section</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/21_Product-Quantity-Increment-%26-Decrement-Button">Product Quantity Increment & Decrement Button</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/22_Product-Page-with-all-Filters-%26-Sorting">Products Page</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/23_Get-Data-for-Products-Page">Get Data for Products Page using Context API & useReducer Hook</a></li>  
 </ul>
