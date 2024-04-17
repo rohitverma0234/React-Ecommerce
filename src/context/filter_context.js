@@ -10,7 +10,7 @@ export const FilterContextProvider = ({ children }) => {
     const initailState = {
         filter_products : [],
         all_products: [],
-        grid_view:true
+        grid_view:false
     }
 
     const [state , dispatch] = useReducer(reducer , initailState)
