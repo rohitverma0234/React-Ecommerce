@@ -35,4 +35,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/22_Product-Page-with-all-Filters-%26-Sorting">Products Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/23_Get-Data-for-Products-Page">Get Data for Products Page using Context API & useReducer Hook</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/24_Dynamic-Grid-View-Layout-in-Product-Page">Dynamic Grid View Layout in Product Page</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/25_Dynamic-ListView-Layout-in-Product-Page">Dynamic ListView Layout in Product Page</a></li>
 </ul>
