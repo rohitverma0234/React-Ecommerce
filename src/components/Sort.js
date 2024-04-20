@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { useFilterContext } from '../context/filter_context';
 
 const Sort = () => {
-  const { grid_view, setGridView, setListView, filter_products } = useFilterContext();
+  const { grid_view, setGridView, setListView, filter_products, sorting} = useFilterContext();
   return (
     <Wrapper className='sort-section'>
       {/* 1st Column */}
@@ -19,7 +19,23 @@ const Sort = () => {
 
       {/* 2nd Column */}
       <div className='product-data'>{`${filter_products.length}`} Product Available</div>
-      <div className='sort-selection'>Dropdown</div>
+
+      {/* 3rd Column */}
+      <div className='sort-selection'>
+        <form>
+          <label htmlFor='sort'></label>
+          <select name="sort" id="sort" className='sort-selection--style' onClick={sorting}>
+            <option value='lowest' id='sort'>Price(lowest)</option>
+            <option value='#' disabled ></option>
+            <option value='highest' id='sort'>Price(highest)</option>
+            <option value='#' disabled ></option>
+            <option value='a-z' id='sort'>Price(a-z)</option>
+            <option value='#' disabled ></option>
+            <option value='z-a' id='sort'>Price(z-a)</option>
+            <option value='#' disabled ></option>
+          </select>
+        </form>
+      </div>
     </Wrapper>
   )
 }

@@ -11,6 +11,7 @@ export const FilterContextProvider = ({ children }) => {
         filter_products : [],
         all_products: [],
         grid_view:false,
+        sorting_value:"lowest",
     }
 
     const [state , dispatch] = useReducer(reducer , initailState)
@@ -26,13 +27,22 @@ export const FilterContextProvider = ({ children }) => {
         return dispatch({type:"SET_LISTVIEW"})
     }
 
+    // sorting function
+    const sorting = () =>{
+        return dispatch({type:"GET_SORT_VALUE"})
+    }
+
+    useEffect(()=>{
+        console.log("hii")
+    },[state.sorting_value])
+
 
     useEffect(()=>{
         dispatch({type:"LOAD_FILTER_PRODUCTS", payload:products})
     },[products])
 
     return (
-        <FilterContext.Provider value={{ ...state, setGridView, setListView }}>
+        <FilterContext.Provider value={{ ...state, setGridView, setListView, sorting }}>
             {children}
         </FilterContext.Provider>
     )
