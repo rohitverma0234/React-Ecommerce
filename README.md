@@ -38,4 +38,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/25_Dynamic-ListView-Layout-in-Product-Page">Dynamic ListView Layout in Product Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/26_Clickable-Grid-%26-List-View-Sorting-Button-in-Product-Page">Clickable Grid & List View Sorting Button in Product Page</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/27_Sort-products-from-low-to-high-prices">Sort products from low to high prices using Context API & useReducer Hook</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/28_Sort-Products-from-low-to-high-prices--Part-2">Sort Products for all 4 cases using sort method</a></li>
 </ul>
