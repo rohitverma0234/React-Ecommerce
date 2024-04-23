@@ -32,9 +32,10 @@ export const FilterContextProvider = ({ children }) => {
         return dispatch({type:"GET_SORT_VALUE"})
     }
 
+    // to sort the products
     useEffect(()=>{
-        console.log("hii")
-    },[state.sorting_value])
+        dispatch({type:"SORTING_PRODUCTS", payload:products})
+    },[state.sorting_value])  // eslint-disable-line react-hooks/exhaustive-deps
 
 
     useEffect(()=>{
