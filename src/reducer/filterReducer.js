@@ -55,8 +55,7 @@ const filterReducer = (state, action) => {
             newSortData = tempSortProduct.sort(sortingProducts)
 
 
-            // Apply the sorting function
-            let newSortData = tempSortProduct.sort(sortingFunction);
+            
         
 
             return {
