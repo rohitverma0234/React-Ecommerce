@@ -12,6 +12,9 @@ export const FilterContextProvider = ({ children }) => {
         all_products: [],
         grid_view:false,
         sorting_value:"lowest",
+        filters:{
+            text:""
+        }
     }
 
     const [state , dispatch] = useReducer(reducer , initailState)
@@ -33,10 +36,22 @@ export const FilterContextProvider = ({ children }) => {
         return dispatch({type:"GET_SORT_VALUE", payload:userValue})
     }
 
+    // update the filter values
+    const updateFilterValue = (event) =>{
+        let name = event.target.name;
+        let value = event.target.value;
+
+        return dispatch({type:"UPDATE_FILTERS_VALUE" , payload:{name,value}})
+    }
+
     // to sort the products
     useEffect(()=>{
         dispatch({type:"SORTING_PRODUCTS"})
     },[products, state.sorting_value])
+  
+        dispatch({type:"FILTER_PRODUCTS"})
+        dispatch({type:"SORTING_PRODUCTS", payload:products})
+    },[state.sorting_value, state.filters])  // eslint-disable-line react-hooks/exhaustive-deps
 
 
     useEffect(()=>{
@@ -44,7 +59,7 @@ export const FilterContextProvider = ({ children }) => {
     },[products])
 
     return (
-        <FilterContext.Provider value={{ ...state, setGridView, setListView, sorting }}>
+        <FilterContext.Provider value={{ ...state, setGridView, setListView, sorting, updateFilterValue }}>
             {children}
         </FilterContext.Provider>
     )
