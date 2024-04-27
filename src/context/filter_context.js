@@ -28,14 +28,15 @@ export const FilterContextProvider = ({ children }) => {
     }
 
     // sorting function
-    const sorting = () =>{
-        return dispatch({type:"GET_SORT_VALUE"})
+    const sorting = (event) =>{
+        let userValue = event.target.value;
+        return dispatch({type:"GET_SORT_VALUE", payload:userValue})
     }
 
     // to sort the products
     useEffect(()=>{
-        dispatch({type:"SORTING_PRODUCTS", payload:products})
-    },[state.sorting_value])  // eslint-disable-line react-hooks/exhaustive-deps
+        dispatch({type:"SORTING_PRODUCTS"})
+    },[products, state.sorting_value])
 
 
     useEffect(()=>{

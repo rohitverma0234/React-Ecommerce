@@ -25,13 +25,13 @@ const Sort = () => {
         <form>
           <label htmlFor='sort'></label>
           <select name="sort" id="sort" className='sort-selection--style' onClick={sorting}>
-            <option value='lowest' id='sort'>Price(lowest)</option>
+            <option value='lowest'>Price(lowest)</option>
             <option value='#' disabled ></option>
-            <option value='highest' id='sort'>Price(highest)</option>
+            <option value='highest'>Price(highest)</option>
             <option value='#' disabled ></option>
-            <option value='a-z' id='sort'>Price(a-z)</option>
+            <option value='a-z'>Price(a-z)</option>
             <option value='#' disabled ></option>
-            <option value='z-a' id='sort'>Price(z-a)</option>
+            <option value='z-a'>Price(z-a)</option>
             <option value='#' disabled ></option>
           </select>
         </form>
