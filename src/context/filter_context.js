@@ -49,10 +49,6 @@ export const FilterContextProvider = ({ children }) => {
         dispatch({type:"SORTING_PRODUCTS"})
     },[products, state.sorting_value])
   
-        dispatch({type:"FILTER_PRODUCTS"})
-        dispatch({type:"SORTING_PRODUCTS", payload:products})
-    },[state.sorting_value, state.filters])  // eslint-disable-line react-hooks/exhaustive-deps
-
 
     useEffect(()=>{
         dispatch({type:"LOAD_FILTER_PRODUCTS", payload:products})
