@@ -31,8 +31,9 @@ export const FilterContextProvider = ({ children }) => {
     }
 
     // sorting function
-    const sorting = () =>{
-        return dispatch({type:"GET_SORT_VALUE"})
+    const sorting = (event) =>{
+        let userValue = event.target.value;
+        return dispatch({type:"GET_SORT_VALUE", payload:userValue})
     }
 
     // update the filter values
@@ -45,6 +46,9 @@ export const FilterContextProvider = ({ children }) => {
 
     // to sort the products
     useEffect(()=>{
+        dispatch({type:"SORTING_PRODUCTS"})
+    },[products, state.sorting_value])
+  
         dispatch({type:"FILTER_PRODUCTS"})
         dispatch({type:"SORTING_PRODUCTS", payload:products})
     },[state.sorting_value, state.filters])  // eslint-disable-line react-hooks/exhaustive-deps
