@@ -36,14 +36,18 @@ export const FilterContextProvider = ({ children }) => {
     }
 
     // update the filter values
-    const updateFilterValue = () =>{
-        return 
+    const updateFilterValue = (event) =>{
+        let name = event.target.name;
+        let value = event.target.value;
+
+        return dispatch({type:"UPDATE_FILTERS_VALUE" , payload:{name,value}})
     }
 
     // to sort the products
     useEffect(()=>{
+        dispatch({type:"FILTER_PRODUCTS"})
         dispatch({type:"SORTING_PRODUCTS", payload:products})
-    },[state.sorting_value])  // eslint-disable-line react-hooks/exhaustive-deps
+    },[state.sorting_value, state.filters])  // eslint-disable-line react-hooks/exhaustive-deps
 
 
     useEffect(()=>{
