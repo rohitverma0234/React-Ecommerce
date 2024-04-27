@@ -40,4 +40,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/27_Sort-products-from-low-to-high-prices">Sort products from low to high prices using Context API & useReducer Hook</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/28_Sort-Products-from-low-to-high-prices--Part-2">Sort Products for all 4 cases using sort method</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/29_Shortest-%26-Easiest-method-to-sort-the-products">Used Switch Case to make code shorter of Sort Products</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/30_Search_Filter">Search Filter using Context API, useReducer Hook and useContext Hook</a></li>
 </ul>
