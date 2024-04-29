@@ -3,12 +3,25 @@ import styled from 'styled-components'
 import { useFilterContext } from '../context/filter_context'
 
 const FilterSection = () => {
-  const { filters: { text }, updateFilterValue } = useFilterContext()
+
+  const getUniqueData = (data,property) =>{
+    let newVal = data.map((curElem)=>{
+      return curElem[property]
+    })
+    newVal = ["All" , ...new Set(newVal)]
+    console.log(newVal)
+  }
+
+  const { filters: { text }, all_products, updateFilterValue } = useFilterContext()
+
+  const categoryOnlyData = getUniqueData(all_products, "category" )
+  console.log(categoryOnlyData)
+
   return (
     <Wrapper>
       <div className='filter-search'>
         <form onSubmit={(e) => e.preventDefault()}>
-          <input type='text' name='text' value={text}
+          <input type='text' name='text' value={text} placeholder='SEARCH'
             onChange={updateFilterValue} />
         </form>
       </div>
