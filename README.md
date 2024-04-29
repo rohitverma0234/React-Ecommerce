@@ -1,4 +1,4 @@
-# Welcome to Rohit React Ecommerce Website
+# Welcome to React Ecommerce Website
 
 ## Follow the 3 Steps and you are good to go.
 
