@@ -13,7 +13,9 @@ export const FilterContextProvider = ({ children }) => {
         grid_view: false,
         sorting_value: "lowest",
         filters: {
-            text: ""
+            text: "",
+            category:"all",
+            company:"all"
         }
     }
 

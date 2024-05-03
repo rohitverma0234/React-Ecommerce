@@ -4,17 +4,16 @@ import { useFilterContext } from '../context/filter_context'
 
 const FilterSection = () => {
 
-  const getUniqueData = (data,property) =>{
-    let newVal = data.map((curElem)=>{
+  const getUniqueData = (data, property) => {
+    let newVal = data.map((curElem) => {
       return curElem[property]
     })
-    newVal = ["All" , ...new Set(newVal)]
-    console.log(newVal)
+    return newVal = ["All", ...new Set(newVal)]
   }
 
-  const { filters: { text }, all_products, updateFilterValue } = useFilterContext()
+  const { filters: { text, category }, all_products, updateFilterValue } = useFilterContext()
 
-  const categoryOnlyData = getUniqueData(all_products, "category" )
+  const categoryOnlyData = getUniqueData(all_products, "category")
   console.log(categoryOnlyData)
 
   return (
@@ -24,6 +23,14 @@ const FilterSection = () => {
           <input type='text' name='text' value={text} placeholder='SEARCH'
             onChange={updateFilterValue} />
         </form>
+      </div>
+
+      <div className='filter-category'>
+      <h3>Category</h3>
+      <div>{categoryOnlyData.map((curElem, index)=>{
+        return <button key={index} type='button' 
+        name='category' value={curElem} onClick={updateFilterValue}>{curElem}</button>
+      })}</div>
       </div>
     </Wrapper>
   )
@@ -46,6 +53,32 @@ const Wrapper = styled.section`
       width: 80%;
     }
   }
+
+  .filter-category {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.4rem;
+
+      button {
+        border: none;
+        background-color: ${({ theme }) => theme.colors.white};
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover {
+          color: ${({ theme }) => theme.colors.btn};
+        }
+      }
+
+      .active {
+        border-bottom: 1px solid #000;
+        color: ${({ theme }) => theme.colors.btn};
+      }
+    }
+  }
+
   `
 
 export default FilterSection
