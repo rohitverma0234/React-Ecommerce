@@ -11,10 +11,13 @@ const FilterSection = () => {
     return newVal = ["All", ...new Set(newVal)]
   }
 
-  const { filters: { text, category }, all_products, updateFilterValue } = useFilterContext()
+  const { filters: { text }, all_products, updateFilterValue } = useFilterContext()
 
   const categoryOnlyData = getUniqueData(all_products, "category")
-  console.log(categoryOnlyData)
+  const companyData = getUniqueData(all_products, "company")
+
+  // console.log(categoryOnlyData)
+  // console.log(companyData)
 
   return (
     <Wrapper>
@@ -26,11 +29,28 @@ const FilterSection = () => {
       </div>
 
       <div className='filter-category'>
-      <h3>Category</h3>
-      <div>{categoryOnlyData.map((curElem, index)=>{
-        return <button key={index} type='button' 
-        name='category' value={curElem} onClick={updateFilterValue}>{curElem}</button>
-      })}</div>
+        <h3>Category</h3>
+        <div>{categoryOnlyData.map((curElem, index) => {
+          return <button key={index} type='button'
+            name='category' value={curElem} onClick={updateFilterValue}>{curElem}</button>
+        })}</div>
+
+        <div className='filter-company'>
+          <h3>Company</h3>
+
+          <form action='#'>
+            <select name='company' id='company' className='filter-company--select' onClick={updateFilterValue}>
+              {
+                companyData.map((curElem, index) => {
+                  return (
+                    <option name="company" value={curElem}>{curElem}</option>
+                  )
+                })
+              }
+            </select>
+          </form>
+        </div>
+
       </div>
     </Wrapper>
   )
@@ -77,6 +97,14 @@ const Wrapper = styled.section`
         color: ${({ theme }) => theme.colors.btn};
       }
     }
+
+      .filter-company--select {
+        padding: 0.3rem 1.2rem;
+        font-size: 1.6rem;
+        color: ${({ theme }) => theme.colors.text};
+        text-transform: capitalize;
+    }
+
   }
 
   `
