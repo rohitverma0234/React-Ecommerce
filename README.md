@@ -42,4 +42,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/29_Shortest-%26-Easiest-method-to-sort-the-products">Used Switch Case to make code shorter of Sort Products</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/30_Search_Filter">Search Filter using Context API, useReducer Hook and useContext Hook</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/31_Category-Filter">Category Filter</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/32_Company_Filters">Company Filter</a></li>
 </ul>
