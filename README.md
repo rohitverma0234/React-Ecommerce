@@ -43,4 +43,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/30_Search_Filter">Search Filter using Context API, useReducer Hook and useContext Hook</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/31_Category-Filter">Category Filter</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/32_Company_Filters">Company Filter</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/33_Colors_Filter-%26-Price_Filter">Color & Price Filter</a></li>
 </ul>
