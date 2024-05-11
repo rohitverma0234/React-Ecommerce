@@ -50,6 +50,11 @@ export const FilterContextProvider = ({ children }) => {
         return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value } })
     }
 
+    // to clear the filters
+    const clearFilters = () =>{
+        dispatch({type: "CLEAR_FILTERS"})
+    }
+
     // to sort the products
     useEffect(() => {
         dispatch({ type: "FILTER_PRODUCTS" })   // for search filter
@@ -63,7 +68,7 @@ export const FilterContextProvider = ({ children }) => {
 
 
     return (
-        <FilterContext.Provider value={{ ...state, setGridView, setListView, sorting, updateFilterValue }}>
+        <FilterContext.Provider value={{ ...state, setGridView, setListView, sorting, updateFilterValue, clearFilters }}>
             {children}
         </FilterContext.Provider>
     )
