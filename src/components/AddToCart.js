@@ -4,51 +4,55 @@ import styled from 'styled-components'
 import CartAmountToggle from './CartAmountToggle';
 import { NavLink } from 'react-router-dom';
 import { Button } from '../styles/Button';
+import { useCartContext } from '../context/cart_context';
 
 const AddToCart = ({ product }) => {
-    const { id, colors, stock } = product
-    const [color, setColor] = useState(colors[0]);
+  const { addToCart } = useCartContext();
 
-    const [amount, setAmount] = useState(1)
+  const { id, colors, stock } = product
 
-    const setDecrease = () => {
-        amount > 1 ? setAmount(amount - 1) : setAmount(1);
-    }
+  const [color, setColor] = useState(colors[0]);
 
-    const setIncrease = () => {
-        amount < stock ? setAmount(amount + 1) : setAmount(stock);
-    }
+  const [amount, setAmount] = useState(1)
 
-    return (
-        <Wrapper>
-            <div className='colors'>
-                <p>
-                    Colors:
-                    {
-                        colors.map((curColor, index) => {
-                            return <button key={index} style={{ backgroundColor: curColor }}
-                                className={color === curColor ? "btnStyle active" : "btnStyle"}
-                                onClick={() => setColor(curColor)}>
-                                {color === curColor ? <FaCheck className='checkStyle' /> : null}
-                            </button>
-                        })
-                    }
-                </p>
-            </div>
+  const setDecrease = () => {
+    amount > 1 ? setAmount(amount - 1) : setAmount(1);
+  }
 
-            {/* Add to Cart */}
-            <CartAmountToggle
-                amount={amount}
-                setDecrease={setDecrease}
-                setIncrease={setIncrease}
-            />
+  const setIncrease = () => {
+    amount < stock ? setAmount(amount + 1) : setAmount(stock);
+  }
 
-            <NavLink to="/cart">
-                <Button className='btn'>Add to Cart</Button>
-            </NavLink>
+  return (
+    <Wrapper>
+      <div className='colors'>
+        <p>
+          Colors:
+          {
+            colors.map((curColor, index) => {
+              return <button key={index} style={{ backgroundColor: curColor }}
+                className={color === curColor ? "btnStyle active" : "btnStyle"}
+                onClick={() => setColor(curColor)}>
+                {color === curColor ? <FaCheck className='checkStyle' /> : null}
+              </button>
+            })
+          }
+        </p>
+      </div>
 
-        </Wrapper>
-    )
+      {/* Add to Cart */}
+      <CartAmountToggle
+        amount={amount}
+        setDecrease={setDecrease}
+        setIncrease={setIncrease}
+      />
+
+      <NavLink to="/cart" onClick={() => addToCart(id, color, amount, product)}>
+        <Button className='btn'>Add to Cart</Button>
+      </NavLink>
+
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.section`

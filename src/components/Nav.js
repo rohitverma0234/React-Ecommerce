@@ -209,7 +209,7 @@ const Nav = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/cart" className="navbar-link cart-trolley--link">
+                        <NavLink to="/cart" className="navbar-link cart-trolley--link" onClick={() => setMenuIcon(false)}>
                             <FiShoppingCart className="cart-trolley" />
                             <span className="cart-total--item"> 10 </span>
                         </NavLink>
