@@ -45,4 +45,5 @@
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/32_Company_Filters">Company Filter</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/33_Colors_Filter-%26-Price_Filter">Color & Price Filter</a></li>
   <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/34_clear-filter-button">Clear Filter Button</a></li>
+  <li><a href="https://github.com/rohitverma0234/React-Ecommerce/tree/35_Add-to-Cart">Add to Cart</a></li>
 </ul>
